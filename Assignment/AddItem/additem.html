@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add a New Item</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <style>
+            body{background-image:url(grocery.jpg)}
+            </style>
+			
+			<script defer src="script.js"></script>
+        <h1>Grocery Inventory System</h1>
+    </head>
+    <body>
+        <div class="loginsection">
+        <h2>Add a new Item</h2>
+		<form name='additem' onSubmit="return formValidation();">
+            <table>
+                <tr>
+                <td>Name of the Item: </td>
+                <td><input type="text" id="itemname" size="25" placeholder="random000"/></td>
+                </tr>
+                <tr>
+                    <td>Number of the Item: </td>
+                    <td><input type="number" id="number"></td>
+                    </tr>
+                <tr>
+                <td>Description: </td>
+                <td><input type="text2" id="detail" size="20"/></td>
+                </tr>
+                <tr>
+                <td>Image of the Item:</td>
+                <td><input type="file" id="avatar" size="20"/></td>
+                </tr>
+                </table>
+                <input type="submit" value="Submit">
+        <p><a href="http://www2.cs.uregina.ca/~jmp477/assignment2/login.html">Logout</a></p>
+        <p><a  href="http://www2.cs.uregina.ca/~jmp477/assignment2/grocerylist.html">Grocery List</a></p>
+        </div>
+		</form>
+    </body>
+</html>
