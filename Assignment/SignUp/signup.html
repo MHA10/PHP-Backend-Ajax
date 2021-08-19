@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SignUp page</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            background-image: url(grocery.jpg)
+        }
+    </style>
+    <script defer src="script.js"></script>
+    
+</head>
+
+<body>
+    <h1>Grocery Inventory System</h1>
+    <div class="loginsection">
+        <h2>Sign Up</h2>
+        <form name='registration' onSubmit="return formValidation();">
+            <table>
+                <tr>
+                    <td>Email </td>
+                    <td><input type="email" id="email" size="20" placeholder="random000@example.com" /></td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth</td>
+                    <td><input type="date" id="dob" size="20"  /></td>
+                </tr>
+                <tr>
+                    <td>Avatar/ Image </td>
+                    <td><input type="file" id="avatar" size="20" /></td>
+                </tr>
+                <tr>
+                    <td>Password </td>
+                    <td><input type="password" id="pswd" size="20" placeholder="min 6 characters" /></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password </td>
+                    <td><input type="password" id="pswdr" size="25" placeholder="renter password"  /></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" name="submit" value="Sign Up">
+            <input type="reset">
+            <br>
+            <p>Existing User?<a href="http://www2.cs.uregina.ca/~jmp477/assignment2/login.html">Login Here</a></p>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        body {
+            background-image: url(grocery.jpg)
+        }
+    </style>
+    <script defer src="script.js"></script>
+    <h1>Grocery Inventory System</h1>
+</head>
+
+<body>
+    <form form name='registration'>
+        <section>
+            <h2>Inventory</h2>
+            <article>
+                <header>
+                    <h3>Tomatoes</h3>
+                </header>
+                <p>Additional Description: Roma</p>
+                <p id="tomatovalue">Number of units:</p>
+                
+                <input type="text" id="number" value="0"/>
+                <input type="button" id="buy" onclick="incrementValue()" value="Buy" />
+
+                <input type="button" id="consume" onclick="decrementValue()" value="Consume" disabled/>
+                <button onclick="resetTomato()">Delete</button> 
+                <p>Posted By: Jeet Patel at July 19th 2021, 7:30 P.M</p>
+            </article>
+            <article>
+                <header>
+                    <h3>Onion</h3>
+                </header>
+                <p>Additional Description: Yellow</p>
+                <p id="onionvalue">Number of units:</p>
+
+                <input type="text" id="number1" value="0"/>
+                <input type="button" onclick="incrementOnion()" value="Buy" />
+                <input type="button" id="consume1" onclick="decrementOnion()" value="Consume" disabled/>
+
+                <button onclick="resetOnion()">Delete</button>
+                <p>Posted By: Jeet Patel at July 19th 2021, 7:30 P.M</p>
+            </article>
+            <article>
+                <header>
+                    <h3>Cheese</h3>
+                </header>
+                <p>Additional Description: Cheddar</p>
+                <p id="cheesevalue">Number of Items:</p>
+
+                <input type="text" id="number2" value="0"/>
+                <input type="button" onclick="incrementcheese()" value="Buy" />
+                <input type="button" id="consume2" onclick="decrementCount()" value="Consume" disabled/>
+
+                <button onclick="resetCheese()">Delete</button>
+                <p>Posted By: Jeet Patel at July 19th 2021, 7:30 P.M</p>
+            </article>
+        </section>
+        <section>
+            <p><a href="http://www2.cs.uregina.ca/~jmp477/assignment2/login.html">Logout</a><br></p>
+            <p><a href="http://www2.cs.uregina.ca/~jmp477/assignment2/additem.html">Add Item</a></p>
+        </section>
+    </form>
+</body>
+
+</html>

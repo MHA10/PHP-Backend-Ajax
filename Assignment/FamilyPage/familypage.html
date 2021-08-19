@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Family Page</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <style>
+            body{background-image:url(grocery.jpg)}
+        </style>
+        <script defer src="script.js"></script>
+        <h1>Grocery Inventory System</h1>
+    </head>
+    <body>
+        <div class="familysection">
+            <h2>Create a new family</h2>
+            <form name="familypage" onSubmit="return formValidation();">
+                <table>
+                    <tr>
+                    <td>Name of the family </td>
+                    <td><input type="text" id="family" size="20" placeholder="random000"/></td>
+                    </tr>
+                    </table>
+                    <br>
+                    <input type="submit" value="Create Family">
+                </form>
+            </div>
+ <div class="familysection2">
+<h2>Change/Join Existing family</h2>
+        <form>
+                            <label for="family" id="num">Choose a family:</label>
+                        <select>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                        <br><br>
+                        <input type="submit" value="Submit">
+                      </form>
+                <br>
+                <p><a href="http://www2.cs.uregina.ca/~jmp477/assignment2/login.html">Logout</a><br></p>
+                <p><a href="http://www2.cs.uregina.ca/~jmp477/assignment2/grocerylist.html">Grocery List</a><br></p>
+                <p><a  href="http://www2.cs.uregina.ca/~jmp477/assignment2/additem.html">Add Item</a></p></div>
+        </form>
+        </div>
+
+    </body>
+</html>
